@@ -78,7 +78,7 @@ const ProductList = ({ cartItems, setCartItems }) => {
 
   return (
     <div className="product-list-container mb-4">
-      <h2 className="mt-4 mb-4">Product List</h2>
+      <h2 className="mt-4 mb-4">House List</h2>
       <Button variant="primary mb-4" onClick={handleShow}>
         Filter
       </Button>

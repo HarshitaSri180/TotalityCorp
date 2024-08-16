@@ -1,0 +1,87 @@
+/* src/components/ProductList.css */
+
+.product-list-container {
+  max-width: 1200px; /* Increased max-width for larger screens */
+  margin: 0 auto;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.product-item {
+  width: calc(25% - 20px); /* 4 columns with margin between items */
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-name {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.product-price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 20px); /* 2 columns on smaller screens */
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 16px;
+}
+
+/* You can add more styles based on your preference */

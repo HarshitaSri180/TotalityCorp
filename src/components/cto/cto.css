@@ -1,0 +1,7 @@
+.bgImg{
+    background-image: url("../../assets/images/banner4.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+}

@@ -1,0 +1,466 @@
+/* Add this to your existing styles or create a new CSS file */
+header {
+  flex-direction: column;
+  /* position: fixed; */
+  background-image: linear-gradient(45deg, #ccccef, transparent);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  top:0;
+}
+nav ul li a:hover{
+  
+  border-bottom: 3px solid #303444;
+  transition: 2s ease;
+}
+.logo a {
+  background: -webkit-linear-gradient(#04b1cf, #212530);
+  -webkit-background-clip: text;
+  text-shadow: #9090e0;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  /* color: #303444; */
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+} */
+
+nav ul li {
+  font-size: 16px;
+  background: -webkit-linear-gradient(#04b1cf, #212530);
+  -webkit-background-clip: text;
+  text-shadow: #9090e0;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul li a {
+  /* color: #303444; */
+  background: -webkit-linear-gradient(#04b1cf, #212530);
+  -webkit-background-clip: text;
+  text-shadow: #9090e0;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+/* src/components/ProductDetail.css */
+.product-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+.contact-details{
+  background: -webkit-linear-gradient(#04b1cf, #212530);
+  -webkit-background-clip: text;
+  text-shadow: #9090e0;
+  font-weight: 500;
+  -webkit-text-fill-color: transparent;
+}
+.bottom-menu ul {
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+.bottom-menu li {
+  list-style: none;
+}
+.bottom-menu {
+  padding-top: 20px;
+}
+.Right-icons svg {
+  height: 25px;
+  font-size: 12px;
+  width: 15px;
+
+}
+.Right-icons a {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.add-to-cart-button {
+  background-color: #3498db;
+  color: #303444;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Add this to your global or component-specific stylesheet */
+.custom-arrow {
+  background-color: #fff;
+  /* Arrow background color */
+  color: #333;
+  /* Arrow color */
+  font-size: 24px;
+  /* Arrow font size */
+  padding: 10px;
+  /* Arrow padding */
+  border-radius: 50%;
+  /* Optional: Rounded corners for the arrows */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-arrow:hover {
+  background-color: #333;
+  /* Hover background color */
+  color: #fff;
+  /* Hover arrow color */
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  /* Adjust the width as needed */
+  margin: auto;
+}
+
+
+/* Styles for slick slider dots */
+.slick-dots li.slick-active button:before {
+  font-size: 20px;
+  opacity: 0.75;
+  color: #ff5700 !important;
+}
+
+/*  slick slider previous button */
+.slick-prev:before,
+/*  slick slider next button */
+.slick-next:before {
+  padding: 10px;
+  background: #fa6c01;
+  border-radius: 25px;
+}
+
+/*  slick slider previous button */
+.slick-prev {
+  left: 50px !important;
+  z-index: 1;
+}
+
+/*  slick slider next button */
+.slick-next {
+  right: 50px !important;
+  z-index: 1;
+}
+/* .slick-prev {
+  left: 25px;
+}
+.slick-next {
+  right: 40px;
+} */
+.product-link a {
+  color: black;
+  text-decoration: auto;
+}
+/* src/components/ProductDetail.css */
+
+.product-detail-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.product-image-container {
+  flex: 2 1;
+  margin-right: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-details {
+  flex: 2;
+  text-align: left;
+}
+
+.product-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Add more styles as needed */
+.cart-container {
+  /* Add your existing styles for the cart container */
+
+  .cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+    position: relative;
+
+    &.loading {
+      opacity: 0.7; /* Dim the item during the removal process */
+      pointer-events: none; /* Disable interactions with loading items */
+    }
+
+      .remove-button {
+        margin-top: 10px;
+        background-color: #dc3545;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Add a smooth transition effect to the button background */
+      }
+    }
+  }
+
+/* Spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading .remove-button::after {
+  content: '';
+  border: 2px solid #fff;
+  border-radius: 50%;
+  border-top: 2px solid #dc3545;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 5px;
+  animation: spin 0.6s linear infinite; /* Add the spinner animation */
+}
+.clear-cart-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect to the button background */
+  position: relative;
+}
+a
+{
+  text-decoration: none;
+}
+/* Header.css */
+
+.header {
+  position: relative;
+  background-color: #fff; /* Add your background color */
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Add transition effect for background color */
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for a better visual */
+}
+/* ProductSlider.css */
+.product-slide {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Add padding for spacing */
+}
+
+.product-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-rating {
+  margin-top: 10px;
+}
+
+.box {
+  padding: 29px;
+  overflow: hidden;
+  text-align: center;
+}
+.product-api {
+  flex-wrap: wrap;
+  display: flex;
+}
+.product-fetched{
+  width: 25%;
+}
+.product-api {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.product-api.fade-out {
+  opacity: 0;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 16px;
+}
+
+/* You can add more styles based on your preference */
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.sticky {
+  z-index: 100;
+  transition: 0.4s;
+  
+  background-color:  #9090e0;
+  position: fixed;
+  animation: slideInFromTop 0.4s;
+}
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+}
+a:hover{
+  color: unset;
+  text-decoration: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #fa6c01;
+  border-color: #fa6c01;
+}
+*{
+  font-family: Futura,sans-serif;;
+}
+.logo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.Right-icons {
+  display: flex;
+  gap: 20px;
+}
+.Right-icons li {
+  list-style: none;
+}
+.signInContainer {
+  max-width: 400px;
+  margin: 0 auto;
+}
+body{
+    background-image: linear-gradient(45deg, #ccccef, transparent);
+
+}
+
+.inputField {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.signInButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signInButton:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+}
+.signupContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.signupForm label {
+  display: block;
+}
+
+.signupForm input[type="text"],
+.signupForm input[type="password"] {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.signupForm button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signupForm button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+}
